@@ -1,2 +1,2 @@
 #!/bin/bash
-betty ./main.c > c
+betty main.c > c
