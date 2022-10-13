@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * This function uses
- * the builtin function, puts,
- * to print out a string of text
- * on the screen
+ * main - Entry Point
+ *
+ * Return - Always 0 (Success)
+ *
  */
 
 int main(void)
