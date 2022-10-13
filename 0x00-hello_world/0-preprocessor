@@ -1,2 +1,2 @@
 #!/bin/bash
-betty main.c > c
+gcc -E main.c -o c
