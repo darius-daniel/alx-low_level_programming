@@ -18,3 +18,5 @@
 	You are not allowed to use the function puts
 	Your program should return 0
 	Your program should compile without warning when using the -Wall gcc option
+
+100-intel => a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
