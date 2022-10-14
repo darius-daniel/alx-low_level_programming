@@ -11,9 +11,7 @@ int main(void)
 
 	for (i = 97; i <= 122; i++)
 	{
-		char letter = ("%c", i);
-
-		putchar(letter);
+		putchar('%c', i);
 	}
 
 	putchar('\n');
