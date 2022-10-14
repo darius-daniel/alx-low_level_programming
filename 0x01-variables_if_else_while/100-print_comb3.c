@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	char num;
-	char num2;
+	int num;
+	int num2;
 
 	for (num = 0; num <= 8; num++)
 	{
