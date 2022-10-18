@@ -13,3 +13,6 @@ main.h - contains several functions and their prototypes
 	Prototype: int _isalpha(int c);
 	Returns 1 if c is a letter, lowercase or uppercase
 	Returns 0 otherwise
+
+6-abs.c - a function that computes the absolute value of an integer.
+	Prototype: int _abs(int);
