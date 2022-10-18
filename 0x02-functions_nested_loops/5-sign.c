@@ -3,8 +3,8 @@
 /**
 * print_sign - Test inout parameter to ascertain
 * if number is +ve or -ve
-* @n - The value subject to a test
-* Return - 0 or 1 depending on the input
+* @n: The value subject to a test
+* Return: 0 or 1 depending on the input
 */
 
 int print_sign(int n)
