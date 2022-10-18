@@ -6,8 +6,10 @@ void print_alphabet(void);
 
 void print_alphabet_x10(void);
 
-void _putchar(char ch)
+void _putchar(ch)
 {
+	ch = char ch;
+
 	write (1, ch, 1);
 }
 
