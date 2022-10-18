@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
 * main - Entry point
@@ -10,11 +9,6 @@ int main(void)
 {
 	char text[10] = "_putchar\n";
 	int i;
-
-	for (i = 0; i <= 10; i++)
-	{
-		_putchar(text[i]);
-	}
-
+	write(1, text, 10);
 	return (0);
 }
