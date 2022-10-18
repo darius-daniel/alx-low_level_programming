@@ -13,11 +13,11 @@ int _isalpha(int c)
 
 	if ((ch < 'A') || (ch > 'z'))
 	{
-		result = 1;
+		result = 0;
 	}
 	else
 	{
-		result = 0;
+		result = 1;
 	}
 
 	return (result);
