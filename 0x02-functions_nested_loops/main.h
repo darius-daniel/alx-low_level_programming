@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int _putchar(char ch);
+void _putchar(char ch);
 
 void print_alphabet(void);
 
