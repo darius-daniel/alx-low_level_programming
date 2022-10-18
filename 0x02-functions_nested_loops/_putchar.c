@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
 * _putchar - Prints passed in 'char' arguments
@@ -11,5 +12,5 @@ void _putchar(char ch)
 /**
  * ch: Parameter to be printed out
  */
-	putchar(ch);
+	write(1, ch, 2);
 }
