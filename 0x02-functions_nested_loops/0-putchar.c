@@ -8,6 +8,7 @@
 int main(void)
 {
 	char text[10] = "_putchar\n";
-	write(1, text, 10);
+
+	write(1, text, 9);
 	return (0);
 }
