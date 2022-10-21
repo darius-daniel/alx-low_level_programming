@@ -17,21 +17,20 @@ void print_remaining_days(int month, int day, int year)
 
 	if (year % 4 == 0)
 	{
-		if (month >= 2 && dayOfYear >= 60)
+		if (month >= 2 && day >= 29)
 		{
 			dayOfYear++;
+		}
 
-			printf("Day of the year: %d\n", dayOfYear);
-			printf("Remaining days: %d\n", 366 - dayOfYear);
-		}
-		else if (month == 2 && dayOfYear == 60)
-		{
-			printf("Day of the year: %d\n", dayOfYear);
-			printf("Remaining days: %d\n", 365 - dayOfYear);
-		}
+		dayOfYear = dayOfYear - 32;
+
+		printf("Day of the year: %d\n", dayOfYear);
+		printf("Remaining days: %d\n", 366 - dayOfYear);
 	}
 	else
 	{
+		dayOfYear = dayOfYear - 90;
+
 		printf("Day of the year: %d\n", dayOfYear);
 		printf("Remaining days: %d\n", 365 - dayOfYear);
 	}
