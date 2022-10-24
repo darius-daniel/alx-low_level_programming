@@ -9,15 +9,13 @@
 void print_rev(char *s)
 {
 	int i;
-	if (strlen(s) == 0)
+	char rev_str[] = strrev(s);
+	
+	if (strlen(rev_str) > 0)
 	{
-		_putchar('');
-	}
-	else
-	{
-		for (i = strlen(s); i >= 0; i--)
+		for (i = 0; i < strlen(rev_str); i++)
 		{
-			_putchar(s[i]);
+			_putchar(rev_str[i]);
 		}
 	}
 
