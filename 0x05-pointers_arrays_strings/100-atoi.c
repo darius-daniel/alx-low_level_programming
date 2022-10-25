@@ -10,6 +10,20 @@
 int _atoi(char *s)
 {
 	int num = atoi(s);
+	int i = 0;
 
+	while (s[i] < '0' || s[i] > '9')
+	{
+		if (s[i] == '-' && (s[i+1] >= '0' && s[i+1] <= '9'))
+		{
+			continue;
+		}
+		else if (s[i] == '-')
+		{
+			num = -(num);
+		}
+		i++;
+	}
+}
 	return (num);
 }
