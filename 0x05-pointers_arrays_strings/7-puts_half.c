@@ -12,7 +12,7 @@ void puts_half(char *str)
 
 	if (strlen(str) % 2 == 0)
 	{
-		midpoint = (strlen(str) / 2) + 1;
+		midpoint = (strlen(str) / 2) + 2;
 	}
 	else
 	{
