@@ -12,11 +12,11 @@ void puts_half(char *str)
 
 	if (strlen(str) % 2 == 0)
 	{
-		midpoint = strlen(str) / 2;
+		midpoint = (strlen(str) - 2) / 2;
 	}
 	else
 	{
-		midpoint = (strlen(str) - 1) / 2;
+		midpoint = (strlen(str) - 3) / 2;
 	}
 
 	while (str[midpoint] != '\0')
