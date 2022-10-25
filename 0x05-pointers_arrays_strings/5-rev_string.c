@@ -1,5 +1,18 @@
 #include <string.h>
 #include "main.h"
+/**
+ * swap_char - swaps the position of 2 chars in a string.
+ * @a: first char
+ * @b: second char
+ */
+
+void swap_char(char *a, char *b)
+{
+	char temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
 
 /**
  * rev_string - reverses a string
@@ -9,14 +22,13 @@
 void rev_string(char *s)
 {
 	int s_length = strlen(s) - 1;
-	char reversed_s[s_length];
 	int i, j;
 
-	j = 0;
+	i = 0;
 
-	for (i = strlen(s) - 1; i >= 0; i--)
+	for (j = strlen(s) - 1; j >= 0; j--)
 	{
-		reversed_s[j] = s[i];
-		j++;
+		swap_char(s[i], s[j]);
+		i++;
 	}
 }
