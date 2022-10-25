@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * _atoi - converts a string to an integer
@@ -12,16 +13,14 @@ int _atoi(char *s)
 	int num = atoi(s);
 	int count = 0;
 	int i;
+}
 
-	for (i = 0; s[i] >= '0' || s[i] <= '9'; i++)
-	{
-		if (s[i] == '-')
-			count++;
-	}
+int main(void)
+{
+	int nb;
 
-	for (i = 1; i < count; i++)
-	{
-		num = -(num);
-	}
-	return (num);
+	nb = _atoi("- 98");
+	printf("%d\n", nb);
+
+	return 0;
 }
