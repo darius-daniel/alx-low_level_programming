@@ -17,3 +17,5 @@ Pointers, Arrays and Strings
 7-puts_half - a function that prints half of a string, followed by a new line.
 
 8-print_array.c - a function that prints n elements of an array of integers, followed by a new line.
+
+9-strcpy.c - function that copies the string pointed to by src, to buffer pointed to dest.
