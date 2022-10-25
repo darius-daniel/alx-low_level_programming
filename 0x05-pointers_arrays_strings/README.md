@@ -13,3 +13,5 @@ Pointers, Arrays and Strings
 5-rev_string.c - a function tha reverses a string.
 
 6-puts2.c - a function that prints every other character of a string, starting with the first character, followed by a new line.
+
+7-puts_half - a function that prints half of a string, followed by a new line.
