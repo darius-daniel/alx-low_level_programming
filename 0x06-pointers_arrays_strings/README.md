@@ -11,3 +11,5 @@ main.h - contains prototypes for all the functions in this directory
 3-strcmp.c - a function that compares two strings. Works exactly like *strcmp*.
 
 4-rev_array.c - a function that reverses the content of an array of integers.
+
+5-string_toupper.c - a function that changes all lowercase letters of a string to uppercase
