@@ -9,3 +9,5 @@ main.h - contains prototypes for all the functions in this directory
 2-strncpy.c - a function that copies a string. Works exactly like *strncpy*
 
 3-strcmp.c - a function that compares two strings. Works exactly like *strcmp*.
+
+4-rev_array.c - a function that reverses the content of an array of integers.
