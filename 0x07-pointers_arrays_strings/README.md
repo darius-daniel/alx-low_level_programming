@@ -5,3 +5,5 @@
 2-strchr.c - a function that locates a character in a string
 
 3-strspn.c - a functiont that get the length of a prefix substring
+
+4-strpbrk.c - a function that searches a string for any of a set of bytes.
