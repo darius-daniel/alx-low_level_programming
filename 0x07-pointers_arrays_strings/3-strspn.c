@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _strspn - gets the lenth of a prefix substring
@@ -32,5 +31,5 @@ unsigned int _strspn(char *s, char *accept)
 		else
 			break;
 	}
-	return (strspn(s, accept);
+	return (strspn(s, accept));
 }
