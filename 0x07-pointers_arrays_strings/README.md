@@ -9,3 +9,5 @@
 4-strpbrk.c - a function that searches a string for any of a set of bytes.
 
 5-strstr.c - a function that finds the first occurrence of the substring needle in the string haystack.
+
+7-print_chessboard.c - a function that prints the chessboard.
