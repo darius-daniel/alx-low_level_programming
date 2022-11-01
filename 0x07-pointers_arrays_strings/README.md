@@ -7,3 +7,5 @@
 3-strspn.c - a functiont that get the length of a prefix substring
 
 4-strpbrk.c - a function that searches a string for any of a set of bytes.
+
+5-strstr.c - a function that finds the first occurrence of the substring needle in the string haystack.
