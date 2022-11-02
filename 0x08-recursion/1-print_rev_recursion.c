@@ -8,7 +8,7 @@ void _print_rev_recursion(char *s)
 {
 	int end = strlen(s) - 1;
 
-	if (*(s + 0) == '\n')
+	if (*(s + end) == '\n')
 	{
 		_putchar('\n');
 	}
