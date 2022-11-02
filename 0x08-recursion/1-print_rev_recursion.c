@@ -6,14 +6,18 @@
   */
 void _print_rev_recursion(char *s)
 {
-	int end = strlen(s) - 1;
-	
-	if (end <= 0)
+	char *end = s;
+
+	if (*(end + 0) != '\0')
+		end++;
+
+	if (strlen(end) == strlen(s))
+	{
 		_putchar('\n');
+	}
 	else
 	{
-		_putchar(*(s + end));
-		end--;
-		_print_rev_recursion((s + 0) - end);
+		_putchar(*(end + 0));
+		_print_rev_recursion(end--);
 	}
 }
