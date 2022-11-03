@@ -17,7 +17,7 @@ int is_prime(int n, int c)
 	}
 	else
 	{
-		if (n <= 7)
+		if (c <= 7)
 		{
 			if (c == 2)
 				c += 1;
