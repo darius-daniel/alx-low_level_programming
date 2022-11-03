@@ -15,14 +15,18 @@ int is_prime(int n, int c)
 		else
 			return (0);
 	}
-	if (c <= 7)
+	else
 	{
-		if (c == 2)
-			c += 1;
-		else
-			c += 2;
-		return (0 + is_prime(n, c));
+		if (n <= 7)
+		{
+			if (c == 2)
+				c += 1;
+			else
+				c += 2;
+			int prime = (0 + is_prime(n, c));
+		}
 	}
+	return (prime);
 }
 /**
   * is_prime_number - detects if an number is a prime number or not
