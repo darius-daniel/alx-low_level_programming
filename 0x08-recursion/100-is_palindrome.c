@@ -1,50 +1,34 @@
-#include "main.h"
-#include <stdio.h>
-#include <string.h>
-/**
-  *compareChars - Compares chars
-  * @s: input string
-  * @len_s:  length of s
-  * Return: 1 if first and last characters are equal
-  */
-int compareChars(char *s, int len_s)
-{
-	if (strlen(s) == 0)
-		return (1);
-	else if (*s != *(s + len_s))
-		return (0);
-	return (compareChars((s + 1), len_s - 1));
-}
-/**
-  * is_palindrome - cheeck if a string is a palindrome or not.
-  * @s: input string
-  * Return: 1 if palindrome. 0 is not.
-  */
-int is_palindrome(char *s)
-{
-	int end_s = strlen(s) - 1;
-
-	return compareChars(s, end_s);
-}
+#include "holberton.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * is_prime - detects if an input number is a prime number.
+ * @n: input number.
+ * @c: iterator.
+ * Return: 1 if n is a prime number. 0 if n is not a prime number.
  */
-int main(void)
+int is_prime(unsigned int n, unsigned int c)
 {
-    int r;
-
-    r = is_palindrome("level");
-    printf("%s: %d\n", "level", r);
-    r = is_palindrome("redder");
-    printf("%s: %d\n", "redder", r);
-    r = is_palindrome("test");
-    printf("%d\n", r);
-    r = is_palindrome("step on no pets");
-    printf("%d\n", r);
-    r = is_palindrome("isaadfl");
-    printf("%d\n", r);
-    return (0);
+	if (n % c == 0)
+	{
+		if (n == c)
+			return (1);
+		else
+			return (0);
+	}
+	return (0 + is_prime(n, c + 1));
+}
+/**
+ * is_prime_number - detects if an input number is a prime number.
+ * @n: input number.
+ * Return: 1 if n is a prime number. 0 if n is not a prime number.
+ */
+int is_prime_number(int n)
+{
+	if (n == 0)
+		return (0);
+	if (n < 0)
+		return (0);
+	if (n == 1)
+		return (0);
+	return (is_prime(n, 2));
 }
