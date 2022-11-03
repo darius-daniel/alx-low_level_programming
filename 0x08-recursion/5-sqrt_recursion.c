@@ -31,5 +31,5 @@ int _sqrt_recursion(int n)
 	else if (n == 1)
 		return (1);
 	else
-		return (power_operation(n, 2));
+		return (getSqrt(n, 2));
 }
