@@ -25,7 +25,7 @@ int is_prime(int n, int c)
 				c += 2;
 		}
 	}
-	return (0 + is_prime(n, 2));
+	return (0 + is_prime(n, c));
 }
 /**
   * is_prime_number - detects if an number is a prime number or not
