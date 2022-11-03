@@ -15,16 +15,10 @@ int is_prime(int n, int c)
 		else
 			return (0);
 	}
+	if (c == 2)
+		c += 1;
 	else
-	{
-		if (c <= 7)
-		{
-			if (c == 2)
-				c += 1;
-			else
-				c += 2;
-		}
-	}
+		c += 2;
 	return (0 + is_prime(n, c));
 }
 /**
