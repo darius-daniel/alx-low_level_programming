@@ -10,13 +10,24 @@
 
 int main(int argc, char *argv[])
 {
-	int init_amt = atoi(argv[1]);
-	int answer = 0, i = 0, state = 0;
-	int coins[] = {25, 10, 5, 2, 1};
+	if (argc == 1 || argc > 2)
+	{
+		printf("Error\n");
+		return (0);
+	}
 
+	int init_amt;
+	int answer;
+	int i;
+	int coins[];
+
+	init_amt = atoi(*(argv + 1));
+	answer = 0;
+	i = 0;
+	coins[] = {25, 10, 5, 2, 1};
 	if (init_amt < 0)
 		printf("0\n");
-	if (argc == 2)
+	else
 	{
 		while (init_amt > 0 && i < 5)
 		{
@@ -30,10 +41,6 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", answer);
 	}
-	if (argc == 1 || argc > 2)
-	{
-		state = 1;
-		printf("Error\n");
-	}
-	return (state);
+
+	return (0);
 }
