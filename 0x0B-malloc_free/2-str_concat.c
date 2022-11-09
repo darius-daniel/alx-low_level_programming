@@ -13,13 +13,14 @@ int _strlen(char *s);
 
 char *str_concat(char *s1, char *s2)
 {
+	int len1, len2, newStrLen;
+	char *newStr;
+	int i, j;
+
 	if (s1 == NULL)
 		s1 = (char *)"";
 	if (s2 == NULL)
 		s2 = (char *)"";
-
-	int len1, len2, newStrLen;
-	char *newStr;
 
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
@@ -28,8 +29,6 @@ char *str_concat(char *s1, char *s2)
 
 	if (newStr == NULL)
 		return (NULL);
-
-	int i, j;
 
 	for (i = 0; s1[i] != '\0'; i++)
 		newStr[i] = s1[i];
