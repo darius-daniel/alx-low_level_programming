@@ -13,7 +13,7 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *p[size];
+	char *p;
 	unsigned int i;
 
 	if (size == 0)
@@ -21,13 +21,14 @@ char *create_array(unsigned int size, char c)
 
 	p = (char *)malloc(sizeof(c) * size);
 
-	if (cr == NULL)
+	if (p == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
 		p[i] = c;
 
 	return (p);
+}
 
 /**
  * simple_print_buffer - prints buffer in hexa
