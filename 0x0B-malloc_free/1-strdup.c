@@ -19,18 +19,15 @@ char *_strdup(char *str)
 		return (NULL);
 
 	lenStr = _strlen(str);
-	newStr = (char *)malloc(sizeof(char) * lenStr);
+	newStr = (char *)malloc(sizeof(char) * (lenStr + 1));
 
 	if (newStr == NULL)
 		return (NULL);
 
-	i = 0;
-	while (str[i] != '\0')
+	for (i = 0; i <= lenStr; i++)
 	{
 		newStr[i] = str[i];
-		i++;
 	}
-	str[i] = '\0';
 	return (newStr);
 }
 
@@ -41,7 +38,7 @@ char *_strdup(char *str)
   */
 int _strlen(char *s)
 {
-	int lenS = 1;
+	int lenS = 0;
 
 	while (s[lenS] != '\0')
 		lenS++;
