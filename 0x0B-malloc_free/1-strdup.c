@@ -13,11 +13,12 @@ int _strlen(char *s);
 char *_strdup(char *str)
 {
 	char *newStr;
-	int i, lenStr = _strlen(str);
+	int i, lenStr;
 
 	if (str == NULL)
 		return (NULL);
 
+	lenStr = _strlen(str);
 	newStr = (char *)malloc(sizeof(str) * lenStr);
 
 	if (newStr == NULL)
@@ -39,7 +40,7 @@ char *_strdup(char *str)
   */
 int _strlen(char *s)
 {
-	int lenS = 0;
+	int lenS = 1;
 
 	while (s[lenS] != '\0')
 		lenS++;
