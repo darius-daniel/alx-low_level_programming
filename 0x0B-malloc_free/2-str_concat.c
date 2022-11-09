@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "main.h"
-#include <stdio.h>
 
 int _strlen(char *s);
 
@@ -55,24 +54,4 @@ int _strlen(char *s)
 	for (len = 0; s[len] != '\0'; len++)
 		;
 	return (len);
-}
-
-/**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char *s;
-
-    s = str_concat("Betty ", "Holberton");
-    if (s == NULL)
-    {
-        printf("failed\n");
-        return (1);
-    }
-    printf("%s\n", s);
-    free(s);
-    return (0);
 }
