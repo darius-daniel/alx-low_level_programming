@@ -11,19 +11,21 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *newBlock;
+	char *newBlock;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	newBlock = (int *)malloc(nmemb * size);
+	newBlock = malloc(nmemb * size);
 	if (newBlock == NULL)
 	{
 		free(newBlock);
 		return (NULL);
 	}
 
-	*newBlock = 0;
+	for (i = 0; i < (nmemb*size); ++i)
+		*(newBlock + i) = (int)0;
 
 	return (newBlock);
 }
