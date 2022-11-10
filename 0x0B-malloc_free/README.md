@@ -11,3 +11,5 @@ main.h - contains prototypes to all the functions in this directory
 4-free_grid.c - a function that frees a 2 dimensional grid previously created by your alloc-grid function
 
 100-argstostr.c - a function that concatenates all the arguments of your programs
+
+101-strtow.c - a function that splits a string into words
