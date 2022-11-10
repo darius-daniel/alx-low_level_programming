@@ -23,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	newBlock[size] = 0;
+	*newBlock = 0;
 
 	return (newBlock);
 }
