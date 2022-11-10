@@ -30,30 +30,29 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *newStr;
 	unsigned int i, j, newStrLen;
 
-	if (n > _strlen(s2))
-		n = _strlen(s2);
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
+	if (n > _strlen(s2))
+		n = _strlen(s2);
+
 	newStrLen = _strlen(s1) + n;
-	newStr = (char *) malloc((sizeof(char) * newStrLen) + 2);
+	newStr = (char *) malloc((sizeof(char) * newStrLen) + 1);
 	if (newStr == NULL)
 	{
 		free(newStr);
 		return (NULL);
 	}
 
-	j = 0;
 	for (i = 0; i < newStrLen; i++)
 	{
 		if (i < _strlen(s1))
 			newStr[i] = s1[i];
 		else
 		{
-			newStr[i] = s2[j];
-			j++;
+			newStr[i] = s2[i - _strlen(s1)];
 		}
 	}
 	newStr[i] = '\0';
