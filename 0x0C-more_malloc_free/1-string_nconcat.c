@@ -28,7 +28,7 @@ unsigned int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *newStr;
-	unsigned int i, j, newStrLen;
+	unsigned int i, newStrLen;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -52,7 +52,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			newStr[i] = s1[i];
 		else
 		{
-			newStr[i] = s2[i - _strlen(s1) - 1];
+			newStr[i] = s2[i - _strlen(s1)];
 		}
 	}
 	newStr[i] = '\0';
