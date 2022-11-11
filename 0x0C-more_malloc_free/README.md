@@ -9,3 +9,5 @@ main.h - contains the prototypes of all the functions in this directory
 3-array_range.c - a function that creates an array of integers
 
 100-realloc.c - a function that reallocates a block of memory using malloc and free
+
+101-mul.c - a program that multiplies two positive integers
