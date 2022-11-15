@@ -5,3 +5,5 @@
 2-main.c - prints the name of the file it was compiled from
 
 3-function_like_macro.h - a functiin-like macro ABS(x) that computes the absolutr value of a number
+
+4-sum.h - a function-like macro that computes the sum of two numbers
