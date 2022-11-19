@@ -9,14 +9,14 @@
   */
 void print_all(const char * const format, ...)
 {
-	const char type_args[] = "cifs";
-	int i, j = 0, k = 0;
+	int j = 0, k;
 	char *str;
 	va_list items;
 
 	va_start(items, format);
 	while (format[j] != '\0')
 	{
+		k = 0;
 		switch (format[j])
 		{
 		case ('c'):
@@ -33,13 +33,9 @@ void print_all(const char * const format, ...)
 			break;
 		case ('s'):
 			str = va_arg(itrms, char *);
-			switch (*str)
-			{
-			case ('\0'):
-				printf("(nil)");
-			default:
-				printf("%s", str);
-			}
+			if (!(*str))
+				str = "(nil)";
+			printf("%s", str);
 			k = 1;
 			break;
 		}
