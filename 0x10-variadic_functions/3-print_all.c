@@ -14,15 +14,13 @@
 void print_all(const char * const format, ...)
 {
 	const char type_args[] = "cifs";
-	int i, j = 0, k;
+	int i, j = 0, k = 0;
 	char *str;
 	va_list items;
 
 	va_start(items, format);
-	while (format[j] != '\0')
-	{
-		switch (format[j])
-		{
+	while (format[j] != '\0'){
+		switch (format[j]){
 			case ('c'):
 				printf("%c", va_arg(items, int));
 				break;
@@ -34,8 +32,7 @@ void print_all(const char * const format, ...)
 				break;
 			case ('s'):
 				str = va_arg(itrms, char *);
-				switch (*str)
-				{
+				switch (*str){
 					case ('\0'):
 						printf("(nil)");
 						break;
@@ -44,7 +41,6 @@ void print_all(const char * const format, ...)
 						break;
 				}
 		}
-		i = 0, k = 0;
 		while (type_args[i] != '\0')
 		{
 			if (type_args[i] == format[j])
