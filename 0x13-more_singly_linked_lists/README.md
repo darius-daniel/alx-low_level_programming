@@ -19,3 +19,7 @@
 **4-free_listint.c -** contains a function that frees a listint_t list.
 
 **4-main.c -**  test the code in 4-free_listint.c
+
+**5-free_listint2.c** - contains a function that frees a listint_t list and set head to NULL.
+
+**5-main.c -** tests the code in 5-free_listint2.c
