@@ -43,3 +43,7 @@
 **10-delete_nodeint.c -** contains a function that deletes  the node at a given index
 
 **10-main.c -** tests the code in 0-delete_nodeint.c
+
+**100-reverse_listint.c -** contains a function that reverses the order of the contents of a linked list.
+
+**100-main.c -** tests the code in 100-reverse_listint.c
