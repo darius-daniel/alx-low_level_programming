@@ -35,3 +35,7 @@
 **8-sum_listint.c -** contains a function that returns the sum of all the data (n) of a listint_t linked list.
 
 **8-main.c -** tests the code int 8-sum_listint.c
+
+**9-insert_nodeint.c -** contains a function that inserts a new node, at a given position, into a listint_t linked list
+
+**9-main.c -** tests the code in 9-insert_nodeint.c
