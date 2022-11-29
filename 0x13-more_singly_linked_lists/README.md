@@ -39,3 +39,7 @@
 **9-insert_nodeint.c -** contains a function that inserts a new node, at a given position, into a listint_t linked list
 
 **9-main.c -** tests the code in 9-insert_nodeint.c
+
+**10-delete_nodeint.c -** contains a function that deletes  the node at a given index
+
+**10-main.c -** tests the code in 0-delete_nodeint.c
