@@ -23,3 +23,7 @@
 **5-free_listint2.c** - contains a function that frees a listint_t list and set head to NULL.
 
 **5-main.c -** tests the code in 5-free_listint2.c
+
+**6-pop_listint.c -** contains a function that deletes the head node of a listint_t linked list and returns the head node's data (n)
+
+**6-main.c -** tests the code in 6-pop_listint.c
