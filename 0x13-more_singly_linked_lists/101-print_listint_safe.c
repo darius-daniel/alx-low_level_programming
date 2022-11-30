@@ -6,7 +6,7 @@
 */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t node_count = (size_t) NULL;
+	size_t node_count = 0;
 
 	while (head)
 	{
@@ -17,9 +17,9 @@ size_t print_listint_safe(const listint_t *head)
 		else
 		{
 			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-			break;
+			return (node_count);
 		}
 	}
 
-	return (node_count);
+	return ((size_t)NULL);
 }
