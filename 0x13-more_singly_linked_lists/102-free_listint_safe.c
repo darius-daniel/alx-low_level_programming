@@ -14,7 +14,7 @@ size_t free_listint_safe(listint_t **h)
 	{
 		prev = *h;
 		node_count++;
-		if (*h - (*h)->next > 0)
+		if (*h - (*h)->next != 0)
 			*h = (*h)->next;
 		else
 		{

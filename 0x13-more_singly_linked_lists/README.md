@@ -52,4 +52,10 @@
 
 **101-main.c -** tests the code in 101-print_listint_safe.c
 
-**102-free_listint_safe.c**
+**102-free_listint_safe.c -** contains a function that frees a listint_t list and set the head to NULL
+
+**102-main.c -** tests the code in 102-free_listint_safe.c
+
+**103-find_loop.c -** contains a function that finds the loop in a linked list and returns the address of the node where the loop starts or NULL if there is no loop.
+
+**103-main.c -** tests the code in 103-find_loop.c
