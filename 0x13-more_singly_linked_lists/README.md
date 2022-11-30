@@ -47,3 +47,7 @@
 **100-reverse_listint.c -** contains a function that reverses the order of the contents of a linked list.
 
 **100-main.c -** tests the code in 100-reverse_listint.c
+
+**101-print_listint_safe.c -** contains a function that safely prints the contents of a listint_t linked list.
+
+**101-main.c -** tests the code in 101-print_listint_safe.c
