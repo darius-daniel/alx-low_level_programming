@@ -10,7 +10,7 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int uint, p;
+	unsigned int uint = 0, p = 1;
 	int len_b;
 
 	if (!b)
@@ -19,16 +19,19 @@ unsigned int binary_to_uint(const char *b)
 	for (len_b = 0; b[len_b] != '\0'; len_b++)
 		;
 
-	p = 0;
-	len_b = len_b - 1;
+	len_b--;
 	while (len_b >= 0)
 	{
 		if (b[len_b] != '0' && b[len_b] != '1')
 			return (0);
 
 		if (b[len_b] == '1')
-			uint += pow(2, p) - p;
-		p++;
+			uint += p;
+
+		if (p < 2)
+		 p++;
+		else
+			p *= 2;
 		len_b--;
 	}
 	return (uint);
