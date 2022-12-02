@@ -29,7 +29,7 @@ unsigned int binary_to_uint(const char *b)
 			uint += p;
 
 		if (p < 2)
-		 p++;
+			p++;
 		else
 			p *= 2;
 		len_b--;
