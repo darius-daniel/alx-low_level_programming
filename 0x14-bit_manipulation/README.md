@@ -19,3 +19,11 @@
 **4-clear_bit.c -** contains a function that sets the value of a bit at a given index to 0
 
 **4-main.c -** tests the code in 4-clear_bit.c
+
+**5-flip_bits.c -** contains a functions the computes the number of required bit flips to get from one number to another
+
+**5-main.c -** tests the code in 5-flip_bits.c
+
+**100-get_endianness.c -** contains a function that checks the endianness
+
+**100-main.c -** tests the code in 100-get_endianness.c
