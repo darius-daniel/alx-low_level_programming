@@ -13,14 +13,10 @@ int _islower(int c)
 	char ch = c;
 	int result;
 
-	if ((ch < 'a') || (ch > 'z'))
-	{
+	if (ch < 'a' || ch > 'z')
 		result = 0;
-	}
 	else
-	{
 		result = 1;
-	}
 
 	return (result);
 }
