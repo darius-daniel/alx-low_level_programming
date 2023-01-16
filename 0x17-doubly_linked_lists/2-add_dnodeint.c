@@ -8,28 +8,28 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *new;
-	dlistint_t *current = *head;
+  dlistint_t *new;
+  dlistint_t *current = *head;
 
-	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
-	{
-		dprintf(2, "Error: Can't malloc\n");
-		return (NULL);
-	}
+  new = malloc(sizeof(dlistint_t));
+  if (new == NULL)
+  {
+    dprintf(2, "Error: Can't malloc\n");
+    return (NULL);
+  }
 
-	new->n = n;
-	new->next = NULL;
-	new->prev = NULL;
+  new->n = n;
+  new->next = NULL;
+  new->prev = NULL;
 
-	if (current == NULL)
-		*head = new;
-	else
-	{
-		current->prev = new;
-		new->next = current;
-		*head = new;
-	}
+  if (current == NULL)
+    *head = new;
+  else
+  {
+    current->prev = new;
+    new->next = current;
+    *head = new;
+  }
 
-	return (new);
+  return (new);
 }
