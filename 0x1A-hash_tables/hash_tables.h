@@ -50,7 +50,7 @@ void hash_table_delete(hash_table_t *ht);
 /* +++++ Typedefs and Structs +++++ */
 
 /**
- * struct shash_node - Node of a sorted hash table
+ * struct shash_node_s - Node of a sorted hash table
  *
  * @key: The key, string
  * The key is unique in the HashTable
@@ -76,7 +76,7 @@ typedef struct shash_node_s
  * Each cell of this array is a pointer to the first node of a linked list,
  * because we want our HashTable to use a Chaining collision handling
  * @shead: A pointer to the first element of the sorted linked list
- * @stail: A pointer to the last element of the sorted linked list 
+ * @stail: A pointer to the last element of the sorted linked list
 */
 typedef struct shash_table_s
 {
