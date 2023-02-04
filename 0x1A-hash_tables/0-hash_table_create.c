@@ -23,10 +23,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	}
 
-	new_hash_table->array = array;
-
 	for (i = 0; i < size; i++)
 		array[i] = NULL;
+
+	new_hash_table->array = array;
 
 	return (new_hash_table);
 }
