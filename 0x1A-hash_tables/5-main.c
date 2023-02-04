@@ -25,6 +25,11 @@ int main(void)
 	hash_table_set(ht, "vivency", "last");
 
 	hash_table_print(ht);
+	
+	printf("=====\n");
+	hash_table_set(ht, "python", "fantastic");
+	hash_table_set(ht, NULL, "ugly");
+	hash_table_print(ht);
 
 	return (EXIT_SUCCESS);
 }
