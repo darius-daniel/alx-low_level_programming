@@ -9,7 +9,7 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t **array = ht->array;
 	hash_node_t *current;
 	char *delim;
-	unsigned int i;
+	unsigned long int i;
 
 	if (ht != NULL)
 	{
