@@ -11,17 +11,20 @@ void hash_table_print(const hash_table_t *ht)
 	char *delim;
 	unsigned int i;
 
-	delim = "";
-	printf("{");
-	for (i = 0; i < ht->size; i++)
+	if (ht != NULL)
 	{
-		current = array[i];
-		while (current != NULL)
+		delim = "";
+		printf("{");
+		for (i = 0; i < ht->size; i++)
 		{
-			printf("%s'%s': '%s'", delim, current->key, current->value);
-			delim = ", ";
-			current = current->next;
+			current = array[i];
+			while (current != NULL)
+			{
+				printf("%s'%s': '%s'", delim, current->key, current->value);
+				delim = ", ";
+				current = current->next;
+			}
 		}
+		printf("}\n");
 	}
-	printf("}\n");
 }

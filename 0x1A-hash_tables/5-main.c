@@ -17,7 +17,12 @@ int main(void)
 	hash_table_set(ht, "Asterix", "Obelix");
 	hash_table_set(ht, "Betty", "cool");
 	hash_table_set(ht, "98", "Battery Street");
-	hash_table_set(ht, "c", "isfun");
+	hash_table_set(ht, "hetairas", "darius");
+	hash_table_set(ht, "mentioner", "ape");
+	hash_table_set(ht, "depravement", "grass");
+	hash_table_set(ht, "neurospora", "Flash");
+	hash_table_set(ht, "dram", "flops");
+	hash_table_set(ht, "vivency", "last");
 
 	hash_table_print(ht);
 
