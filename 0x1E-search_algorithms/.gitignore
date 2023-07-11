@@ -1,5 +1,6 @@
 *-main.c
 0-linear
-test.c
+test*
 1-binary
 a.out
+100-jump
