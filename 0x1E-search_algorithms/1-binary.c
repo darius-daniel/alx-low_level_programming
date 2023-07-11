@@ -44,6 +44,8 @@ void print_list(int *array, size_t start, size_t stop)
 * @left: the left-most index of @array
 * @right: the right-most index of @array
 * @value: the value searched for in @array
+* Return: if the value is not found, -1. Else, return the index
+* where the value is located in the array
 */
 int search(int *array, size_t left, size_t right, int value)
 {
