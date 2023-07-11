@@ -1,5 +1,10 @@
 #include "search_algos.h"
 
+
+/* Prototypes for helper functions */
+int search(int *array, size_t left, size_t right, int value);
+void print_list(int *array, size_t start, size_t stop);
+
 /**
 * binary_search - searches for a value in a sorted array of integer using
 * the Binary search algorithm
