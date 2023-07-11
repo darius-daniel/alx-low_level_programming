@@ -37,7 +37,6 @@ void print_list(int *array, size_t start, size_t stop)
 	}
 }
 
-
 /**
 * search - does the actual work of searching
 * @array: the array it is searching in
@@ -54,7 +53,7 @@ int search(int *array, size_t left, size_t right, int value)
 	if (left <= right)
 	{
 		print_list(array, left, right);
-		if (array[mid] == 0)
+		if (array[mid] == value)
 			return (mid);
 		else if (array[mid] > value)
 			return (search(array, left, mid - 1, value));

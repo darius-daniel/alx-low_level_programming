@@ -2,6 +2,7 @@
 #define SEARCH_ALGOS
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /* ================== Prototypes =================== */
 /* Helper functions */
