@@ -32,7 +32,7 @@ int jump_search(int *array, size_t size, int value)
 		if (low > size - 1)
 		{
 			high = low;
-			low -= sqrt(size);
+			low -= sqrt(size) - 1;
 		}
 		printf("Value found between indexed [%ld] and [%ld]\n", low, high);
 		if (high > size - 1)
