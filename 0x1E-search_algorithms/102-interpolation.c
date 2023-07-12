@@ -11,25 +11,27 @@
 */
 int interpolation_search(int *array, size_t size, int value)
 {
-	size_t high, low, pos;
+	size_t hi, lo, pos;
 
 	if (array != NULL)
 	{
-		high = size - 1;
-		low = 0;
+		hi = size - 1;
+		lo = 0;
 
-		while (value >= array[low] && value <= array[high] && low <= high)
+		while (value >= array[lo] && value <= array[hi] && lo <= hi)
 		{
-			pos = low + (((double)(high -low) / (array[high] - array[low])) * (value - array[low]));
+			pos = (((double)(hi - lo) / (array[hi] - array[lo])));
+			pos *= (value - array[lo]);
+			pos += lo;
 			printf("Value checked at array[%ld] = [%d]\n", pos, array[pos]);
 			if (array[pos] == value)
-				return pos;
+				return (pos);
 			else if (array[pos] < value)
-				low = pos + 1;
+				lo = pos + 1;
 			else
-				high = pos - 1;
+				hi = pos - 1;
 		}
 	}
 
-	return (-1); 
+	return (-1);
 }
